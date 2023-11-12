@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:id="@+id/parent_layout_propriedade"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardPropriedades"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="15dp"
+        app:cardBackgroundColor="#659251"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="8dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tvPropriedade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:text="@string/propriedade_x"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlInfoProp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignStart="@+id/CardPropriedades"
+            android:layout_gravity="bottom"
+            android:background="#FDFDFD"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvCidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/cidade" />
+
+            <TextView
+                android:id="@+id/tvEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/estadopropriedade" />
+
+            <ImageView
+                android:id="@+id/ivStatusProp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/mudadecor"
+                android:src="@drawable/ic_status" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

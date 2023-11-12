@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.manejointeligentedepragas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_novo_dnvnovo"
+        android:label="MIP²"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_novo_dnvnovo"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="my.aplication.manejointeligentedepragas.Sobre"></activity>
+        <activity android:name="my.aplication.manejointeligentedepragas.MudaSenha" />
+        <activity android:name="my.aplication.manejointeligentedepragas.AtualizarInfoPerfil" />
+        <activity android:name="my.aplication.manejointeligentedepragas.Referencias" />
+        <activity android:name="my.aplication.manejointeligentedepragas.RecomendacoesMAPA" />
+        <activity android:name="my.aplication.manejointeligentedepragas.AdicionarTalhao" />
+        <activity android:name="my.aplication.manejointeligentedepragas.Talhoes" />
+        <activity android:name="my.aplication.manejointeligentedepragas.PlanoDeAmostragemNovo" />
+        <activity
+            android:name="my.aplication.manejointeligentedepragas.IntroActivity"
+            android:hardwareAccelerated="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="my.aplication.manejointeligentedepragas.RelatorioAplicacoesPlanos2" />
+        <activity android:name="my.aplication.manejointeligentedepragas.SelecionaPragaRelatorioAplicacoesRealizadas"
+            android:screenOrientation="portrait" />
+        <activity android:name="my.aplication.manejointeligentedepragas.SelecionaPragaPlanosRealizados"
+            android:screenOrientation="portrait" />
+        <activity android:name="my.aplication.manejointeligentedepragas.RelatorioAplicacoesRealizadas" />
+        <activity android:name="my.aplication.manejointeligentedepragas.SelecionaPragaRelatorioAplicacoesPlanos"
+            android:screenOrientation="portrait"/>
+        <activity android:name="my.aplication.manejointeligentedepragas.RelatorioAplicacoesPlanos" />
+        <activity android:name="my.aplication.manejointeligentedepragas.EsqueciSenha" />
+        <activity android:name="my.aplication.manejointeligentedepragas.RelatorioPlanosRealizados" />
+        <activity android:name="my.aplication.manejointeligentedepragas.SelecionaPragaRelatorioPragaPlano"
+            android:screenOrientation="portrait"/>
+        <activity android:name="my.aplication.manejointeligentedepragas.RelatorioPragaPlano" />
+        <activity android:name="my.aplication.manejointeligentedepragas.Relatorios" />
+        <activity android:name="my.aplication.manejointeligentedepragas.VisualizaInimigos" />
+        <activity android:name="my.aplication.manejointeligentedepragas.VisualizaMetodos" />
+        <activity android:name="my.aplication.manejointeligentedepragas.VisualizaPlantas" />
+        <activity android:name="my.aplication.manejointeligentedepragas.infoInimigoNatural" />
+        <activity android:name="my.aplication.manejointeligentedepragas.infoMetodo" />
+        <activity android:name="my.aplication.manejointeligentedepragas.infoPlanta" />
+        <activity android:name="my.aplication.manejointeligentedepragas.AplicaMetodoDeControle" />
+        <activity android:name="my.aplication.manejointeligentedepragas.ConfirmacaoPlanoAmostragem" />
+        <activity android:name="my.aplication.manejointeligentedepragas.InfoPraga" />
+        <activity android:name="my.aplication.manejointeligentedepragas.VisualizaPragas" />
+        <activity
+            android:name="my.aplication.manejointeligentedepragas.PlanoDeAmostragem"
+            android:screenOrientation="portrait" />
+        <activity android:name="my.aplication.manejointeligentedepragas.RealizarPlano"
+            android:screenOrientation="portrait"/>
+        <activity android:name="my.aplication.manejointeligentedepragas.SobreMIP" />
+        <activity android:name="my.aplication.manejointeligentedepragas.VisualizaFuncionario" />
+        <activity android:name="my.aplication.manejointeligentedepragas.Perfil" />
+        <activity android:name="my.aplication.manejointeligentedepragas.AdicionarPraga"
+            android:screenOrientation="portrait"/>
+        <activity android:name="my.aplication.manejointeligentedepragas.Pragas" />
+        <activity android:name="my.aplication.manejointeligentedepragas.AcoesCultura" />
+        <activity android:name="my.aplication.manejointeligentedepragas.AdicionarFunc"
+            android:screenOrientation="portrait"/>
+        <activity android:name="my.aplication.manejointeligentedepragas.AdicionarCultura"
+            android:screenOrientation="portrait"/>
+        <activity android:name="my.aplication.manejointeligentedepragas.Cultura" />
+        <activity android:name="my.aplication.manejointeligentedepragas.AdicionarPropriedade"
+            android:screenOrientation="portrait"/>
+        <activity android:name="my.aplication.manejointeligentedepragas.Propriedades" />
+        <activity android:name="my.aplication.manejointeligentedepragas.Cadastro" />
+        <activity android:name="my.aplication.manejointeligentedepragas.Entrar" />
+        <activity android:name="my.aplication.manejointeligentedepragas.MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

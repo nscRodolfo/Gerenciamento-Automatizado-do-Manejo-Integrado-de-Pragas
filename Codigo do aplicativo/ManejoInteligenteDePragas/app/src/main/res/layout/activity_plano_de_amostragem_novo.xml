@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="my.aplication.manejointeligentedepragas.PlanoDeAmostragem"
+    android:id="@+id/drawer_layout_plano_de_amostragem_novo"
+    android:fitsSystemWindows="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_plano_de_amostragem_novo"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <TextView
+            android:id="@+id/tvPlantasPT_novo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/n_mero_de_plantas_por_talh_o"
+            android:textColor="#659251"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_plano_de_amostragem_novo" />
+
+        <TextView
+            android:id="@+id/tvpontos_novo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/n_mero_de_pontos_por_talh_o"
+            android:textColor="#659251"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlantasPT_novo" />
+
+        <TextView
+            android:id="@+id/tvPlantasPonto_novo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/n_mero_de_plantas_por_ponto"
+            android:textColor="#659251"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvpontos_novo" />
+
+        <TextView
+            android:id="@+id/tvNPlantasPorTalhao_novo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/_01"
+            android:textColor="#659251"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/tvPlantasPT_novo"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_plano_de_amostragem_novo" />
+
+        <TextView
+            android:id="@+id/tvNPontosPorTalhao_novo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/_02"
+            android:textColor="#659251"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/tvpontos_novo"
+            app:layout_constraintTop_toBottomOf="@+id/tvNPlantasPorTalhao_novo" />
+
+        <TextView
+            android:id="@+id/tvNPlantasPorPonto_novo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/_03"
+            android:textColor="#659251"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/tvPlantasPonto_novo"
+            app:layout_constraintTop_toBottomOf="@+id/tvNPontosPorTalhao_novo" />
+
+        <TextView
+            android:id="@+id/tvtalhaooo_novo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/talh_o"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnPresencaPraga_novo"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvContagemTalhoes_novo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/_04"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnPresencaPraga_novo"
+            app:layout_constraintStart_toEndOf="@+id/tvtalhaooo_novo" />
+
+        <TextView
+            android:id="@+id/tvplantaaa_novo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/planta"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnAusenciaPraga_novo"
+            app:layout_constraintEnd_toStartOf="@+id/tvContagemPlantas_novo" />
+
+        <TextView
+            android:id="@+id/tvContagemPlantas_novo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/_05"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnAusenciaPraga_novo"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPalavraAmostragem_novo"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/amostragem"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvtalhaooo_novo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/ImgInfo_novo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="13dp"
+            android:clickable="true"
+            android:contentDescription="@string/imageminfo"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/tvtalhaooo_novo"
+            app:layout_constraintStart_toEndOf="@+id/tvPalavraAmostragem_novo"
+            app:srcCompat="@drawable/ic_info_tentativa" />
+
+        <Button
+            android:id="@+id/btnPresencaPraga_novo"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="75dp"
+            android:background="#925158"
+            android:text="Encontrado"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/btnTalhaoAnterior_novo"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnAusenciaPraga_novo"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="75dp"
+            android:background="#939393"
+            android:text="Não encontrado"
+            android:textColor="#FFFFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/btnTalhaoSuperior_novo"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnTalhaoAnterior_novo"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="#659251"
+            android:padding="10dp"
+            android:text="@string/talh_o_anterior"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnTalhaoSuperior_novo"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="#659251"
+            android:padding="10dp"
+            android:text="@string/pr_ximo_talh_o"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnCorrige_novo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#659251"
+            android:text="@string/corrigir"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/btnTalhaoSuperior_novo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAusenciaPraga_novo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view_plano_de_amostragem_novo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

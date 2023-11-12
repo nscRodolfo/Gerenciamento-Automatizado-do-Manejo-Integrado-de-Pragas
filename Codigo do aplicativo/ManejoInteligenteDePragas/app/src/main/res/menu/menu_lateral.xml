@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ShowIn="navView" >
+    <group>
+        <item
+            android:id="@+id/perfil"
+            android:title="@string/perfil">
+
+        </item>
+        <item
+            android:id="@+id/plantas"
+            android:title="@string/plantas">
+
+        </item>
+        <item
+            android:id="@+id/pragas"
+            android:title="@string/pragas">
+
+        </item>
+        <item
+            android:id="@+id/metodo_de_controle"
+            android:title="@string/m_todos_de_controle">
+
+        </item>
+        <item
+            android:id="@+id/sobre_o_mip"
+            android:title="@string/sobre_o_mip">
+
+        </item>
+    </group>
+</menu>

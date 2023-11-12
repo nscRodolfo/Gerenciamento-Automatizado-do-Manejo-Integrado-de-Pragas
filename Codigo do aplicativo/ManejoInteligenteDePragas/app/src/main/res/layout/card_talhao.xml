@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:id="@+id/parent_layout_talhao"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardTalhoes"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="15dp"
+        app:cardBackgroundColor="#659251"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="8dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tvTalhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:text="@string/talhao_x"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlInfoTalhao"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignStart="@+id/CardPropriedades"
+            android:layout_gravity="bottom"
+            android:background="#FDFDFD"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvDiasParaContagemTalhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/dias_para_a_contagem_x" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

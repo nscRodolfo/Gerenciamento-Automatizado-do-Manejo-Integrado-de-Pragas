@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ShowIn="navView" >
+    <group>
+        <item
+            android:id="@+id/plantas_main"
+            android:title="@string/plantas_menu_main">
+
+        </item>
+        <item
+            android:id="@+id/pragas_main"
+            android:title="@string/pragas_menu_main">
+
+        </item>
+        <item
+            android:id="@+id/metodo_de_controle_main"
+            android:title="@string/m_todos_de_controle_menu_maian">
+
+        </item>
+    </group>
+</menu>
